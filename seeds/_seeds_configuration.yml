@@ -1,0 +1,143 @@
+version: 2
+
+seeds:
+  - name: accounts
+    config:
+      column_types:
+        id: int64
+        name: string
+        created_at: timestamp
+        updated_at: timestamp
+        time_zone: string
+        default_language: string
+        city: string
+        street: string
+        zip: string
+        collective_agreement_id: int64
+        cheat_sheet_hour_cut: int64
+        social_tax: int64
+        paid_breaks: boolean
+        show_real_and_planned_hours_on_planning: boolean
+        preferences: string
+        blocked: boolean
+        payroll_software_id: string
+        partner_id: string
+        country: string
+  
+  - name: locations
+    config:
+      column_types:
+        id: int64
+        name: string
+        account_id: int64
+        created_at: timestamp
+        updated_at: timestamp
+        address: string
+        preferences: string
+        city: string
+        zipcode: string
+        collective_agreement_id: int64
+        country: string
+        partner_id: string
+        archived: boolean
+        default_break_duration: int64
+        payroll_software_identifier: string
+        enable_public_holiday_configuration: boolean
+        public_holiday_overtime_rate: int64
+        public_holiday_paid_by_default: boolean
+        location_type: string
+        minimum_shift_duration_for_automatic_breaks_in_hours: int64
+
+  - name: memberships
+    config:
+      column_types:
+        id: int64
+        user_id: int64
+        account_id: int64
+        active: boolean
+        role: string
+        created_at: timestamp
+        updated_at: timestamp
+        sort_index: string
+        preferences: string
+        onboarded: boolean
+        can_manage_published_planning: boolean
+        can_invalidate_shift: boolean
+        can_remove_employee: boolean
+        can_set_custom_rest_value: boolean
+        lastname: string
+        street_address: string
+        enhanced_medical_examination: boolean
+        firstname: string
+
+  - name: rests
+    config:
+      column_types:
+        id: int64
+        user_contract_id: int64
+        timeoff_id: int64
+        original_shift_id: int64
+        rest_type: string
+        starts_at: timestamp
+        ends_at: timestamp
+        created_at: timestamp
+        updated_at: timestamp
+        partner_id: string
+        custom_value: string
+        account_id: int64
+
+  - name: shifts
+    config:
+      column_types:
+        id: int64
+        user_contract_id: int64
+        weeklyschedule_id: int64
+        label_id: int64
+        breakduration: int64
+        starts_at: timestamp
+        ends_at: timestamp
+        real_breakduration: int64
+        real_starts_at: timestamp
+        real_ends_at: timestamp
+        did_not_show: boolean
+        validated_at: timestamp
+        validator_id: int64
+        planned_hours_last_edited_at: timestamp
+        planned_hours_last_edited_by_id: int64
+        created_at: timestamp
+        updated_at: timestamp
+        locked_at: timestamp
+        partner_id: string
+        account_id: int64
+        planification_type: string
+
+  - name: user_contracts
+    config:
+      column_types:
+        id: int64
+        created_at: timestamp
+        updated_at: timestamp
+        location_id: int64
+        contract_end: date
+        contract_time: float64
+        contract_start: date
+        contract_end_trial: date
+        contract_type: string
+        lastname: string
+        firstname: string
+        street_address: string
+        do_not_show_in_register: boolean
+        contract_end_reason: string
+        team_id: int64
+        invitation_sent_at: timestamp
+        invitation_accepted_at: timestamp
+        membership_id: int64
+        daily_worker: boolean
+        working_days_in_week: int64
+        partner_id: string
+        birth_department_code: string
+        start_time: timestamp
+        account_id: int64
+        original_contract_id: int64
+        type: string
+        virtual: boolean
