@@ -30,7 +30,7 @@ Pour l'exécuter, il suffit de faire `dbt build -s +fct_nb_location_and_membersh
 **2. Quel est le revenu hebdomadaire attendu par compte avec le nouveau modèle de tarification ?**<br>
 Le modèle fct_expected_weekly_income_by_account permet de répondre à cette question. 
 Pour l'exécuter, il suffit de faire `dbt build -s +fct_expected_weekly_income_by_account`<br>
-![DAG +fct_expected_weekly_income_by_account](https://github.com/tho-bre/dbt-combo-test/assets/130186547/3b31bbb9-03d8-4248-9167-e7a26a59d6be)<br><br>
+![DAG +fct_expected_weekly_income_by_account](https://github.com/tho-bre/dbt-combo-test/assets/130186547/4c7f6327-03f0-4147-9ee3-d4c3098e624b)<br><br>
 
 
 ## Conception du projet 
