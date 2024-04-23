@@ -38,7 +38,8 @@ Pour l'exécuter, il suffit de faire `dbt build -s +fct_expected_weekly_income_b
 Tout d'abord, étant donné que nous traitons avec des fichiers CSV, je les ai placés dans des seeds dbt, car il est judicieux de procéder de cette manière. Dans un contexte réel, ces tables seraient situées dans un dataset brut. Le projet est structuré en trois parties principales :<br>
 Modèles de **staging** : Ces modèles servent d'interface directe avec les sources de données.<br>
 Modèles **intermédiaires** : Ils sont utilisés pour effectuer des transformations qui visent à simplifier les modèles subséquents.<br>
-Modèles dans les **marts** : Ces modèles sont conçus pour fournir des insights sur Combo et répondre aux questions financières relatives au potentiel MRR, adapté sur une base hebdomadaire.<br>
+Modèles dans les **marts** : Ces modèles sont conçus pour fournir des insights sur Combo et répondre aux questions financières relatives au potentiel MRR, adapté sur une base hebdomadaire.<br><br>
+![Structure du projet](https://github.com/tho-bre/dbt-combo-test/assets/130186547/3e0c4eb8-10fa-4dc2-9ba0-7cc2541cbc41)<br>
 
 J'ai volontairement omis la réalisation de tests, car cette étape n'est pas la plus complexe dans dbt, les tests étant souvent préconçus. Cependant, nous aurions pu envisager l'implémentation de tests génériques, tels que des vérifications de clés étrangères et de non-nullité. Des tests plus spécifiques auraient également pu être mis en place, par exemple pour s'assurer que le champ contract_time de la table user_contracts ne soit pas négatif.
 
