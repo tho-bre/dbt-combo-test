@@ -24,11 +24,11 @@ ATTENTION : Pour que le projet fonctionne, il faut glisser/déposer les CSV dans
 
 **1. Quel est le nombre de sites et d'employés facturables par semaine pour chaque compte ?**<br>
 Le modèle fct_nb_location_and_membership_accountable_by_account permet de répondre à cette question. 
-Pour l'exécuter, il suffit de faire `dbt run -s +fct_nb_location_and_membership_accountable_by_account`
+Pour l'exécuter, il suffit de faire `dbt build -s +fct_nb_location_and_membership_accountable_by_account`
 
 **2. Quel est le revenu hebdomadaire attendu par compte avec le nouveau modèle de tarification ?**<br>
 Le modèle fct_expected_weekly_income_by_account permet de répondre à cette question. 
-Pour l'exécuter, il suffit de faire `dbt run -s +fct_expected_weekly_income_by_account`
+Pour l'exécuter, il suffit de faire `dbt build -s +fct_expected_weekly_income_by_account`
 
 
 ## Conception du projet 
