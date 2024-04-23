@@ -6,14 +6,14 @@ Ce projet vise à adapter la stratégie de tarification de Combo, une entreprise
 
 
 ## Installer le projet dbt
-1 - Créer un environnement virtuel<br>
-2 - Installer BigQuery pour dbt : `pip install dbt-bigquery`<br>
-3 - Installer le fichier **profiles.yml** : `dbt init`<br>
+1. Créer un environnement virtuel<br>
+2. Installer BigQuery pour dbt : `pip install dbt-bigquery`<br>
+3. Installer le fichier **profiles.yml** : `dbt init`<br>
     - Sélectionner la base de données bigquery<br>
     - service_account<br>
-    - Le chemin du fichier **gcp_credentials.json**<br> (Fournit dans le mail)
+    - Le chemin du fichier **gcp_credentials.json** (Fournit dans le mail)<br>
     - dataset : public (peu importe, ils seront personnalisés dans le projet)<br>
-4 - Faire la commande : `dbt debug`. On doit avoir le message : **All checks passed!**<br>
+4. Faire la commande : `dbt debug`. On doit avoir le message : **All checks passed!**<br>
 
 Pour info : Il est également possible de se connecter à BigQuery via un IDE (Datagrip ou dbEaver par exemple), avec les mêmes credentials que dans le json.<br>
 
