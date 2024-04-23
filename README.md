@@ -11,13 +11,13 @@ Ce projet vise à adapter la stratégie de tarification de Combo, une entreprise
 3 - Installer le fichier **profiles.yml** : `dbt init`<br>
     - Sélectionner la base de données bigquery<br>
     - service_account<br>
-    - Le chemin du fichier **gcp_credentials.json**<br>
-    - dataset : public<br>
+    - Le chemin du fichier **gcp_credentials.json**<br> (Fournit dans le mail)
+    - dataset : public (peu importe, ils seront personnalisés dans le projet)<br>
 4 - Faire la commande : `dbt debug`. On doit avoir le message : **All checks passed!**<br>
 
 Pour info : Il est également possible de se connecter à BigQuery via un IDE (Datagrip ou dbEaver par exemple), avec les mêmes credentials que dans le json.<br>
 
-ATTENTION : Pour que le projet fonctionne, il faut glisser/déposer les CSV dans le dossier **seeds**. En effet, git ne permet pas d'uploader des fichiers trop volumineux.<br>
+**ATTENTION** : Pour que le projet fonctionne, il faut glisser/déposer les CSV dans le dossier **seeds**. En effet, git ne permet pas d'uploader des fichiers trop volumineux.<br>
 
 
 ## Questions
