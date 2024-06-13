@@ -1,8 +1,8 @@
-# dbt-combo-test
+# dbt-fictive-project
 
 
 ## Le projet
-Ce projet vise à adapter la stratégie de tarification de Combo, une entreprise SaaS dans le domaine des RH, à un modèle basé sur l'utilisation. À travers l'outil dbt pour la transformation de données, nous analysons les données clients pour identifier les employés et les localisations facturables chaque semaine, en fonction du nouveau modèle de tarification. Le travail implique le traitement de données issues de plusieurs fichiers CSV, couvrant des aspects tels que les comptes clients, les employés, et les localisations, pour calculer les revenus hebdomadaires prévus par compte. Ce projet met en lumière notre approche pour soutenir la transition de Combo vers une tarification plus flexible et alignée sur l'utilisation réelle de ses services par les clients.
+Ce projet vise à adapter la stratégie de tarification de *****, une entreprise SaaS dans le domaine des RH, à un modèle basé sur l'utilisation. À travers l'outil dbt pour la transformation de données, nous analysons les données clients pour identifier les employés et les localisations facturables chaque semaine, en fonction du nouveau modèle de tarification. Le travail implique le traitement de données issues de plusieurs fichiers CSV, couvrant des aspects tels que les comptes clients, les employés, et les localisations, pour calculer les revenus hebdomadaires prévus par compte. Ce projet met en lumière notre approche pour soutenir la transition de *****, vers une tarification plus flexible et alignée sur l'utilisation réelle de ses services par les clients.
 
 
 ## Installer le projet dbt
@@ -38,7 +38,7 @@ Pour l'exécuter, il suffit de faire `dbt build -s +fct_expected_weekly_income_b
 Tout d'abord, étant donné que nous traitons avec des fichiers CSV, je les ai placés dans des seeds dbt, car il est judicieux de procéder de cette manière. Dans un contexte réel, ces tables seraient situées dans un dataset brut. Le projet est structuré en trois parties principales :<br>
 Modèles de **staging** : Ces modèles servent d'interface directe avec les sources de données.<br>
 Modèles **intermédiaires** : Ils sont utilisés pour effectuer des transformations qui visent à simplifier les modèles subséquents.<br>
-Modèles dans les **marts** : Ces modèles sont conçus pour fournir des insights sur Combo et répondre aux questions financières relatives au potentiel MRR, adapté sur une base hebdomadaire.<br><br>
+Modèles dans les **marts** : Ces modèles sont conçus pour fournir des insights sur *****, et répondre aux questions financières relatives au potentiel MRR, adapté sur une base hebdomadaire.<br><br>
 <div align="center">
     <img src="https://github.com/tho-bre/dbt-combo-test/assets/130186547/3e0c4eb8-10fa-4dc2-9ba0-7cc2541cbc41" width="40%">
 </div><br>
