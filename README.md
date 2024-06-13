@@ -50,4 +50,4 @@ De plus, j'ai opté pour une nomenclature des tables au singulier pour plusieurs
 
 ## Mes coordonnées
 **email** : tho.bremond@gmail.com<br>
-**téléphone** : 06.78.12.65.47<br>
+**téléphone** : 06.78.**.**.**<br>
